@@ -16,7 +16,7 @@ function displayReviews() {
             reviewList.innerHTML = '';
             response.data.forEach(review => {
                 const listItem = document.createElement('li');
-                listItem.textContent = `Company: ${review.companyName}, Pros: ${review.pros}, Cons: ${review.cons}, Rating: ${review.rating}`;
+                listItem.textContent = `Company Name: ${review.companyName}, Pros: ${review.pros}, Cons: ${review.cons}, Rating: ${review.rating}`;
 
                 reviewList.appendChild(listItem);
             });
@@ -58,3 +58,5 @@ function handleSearch() {
         }
     });
 }
+
+//check comment
